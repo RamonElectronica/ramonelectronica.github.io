@@ -1,4 +1,4 @@
-<!DOCTYPEdoctype html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -67,11 +67,17 @@
     <script type="module" crossorigin src="/ramon-electronica-web/assets/index-l1EJY1kl.js"></script>
     <link rel="stylesheet" crossorigin href="/ramon-electronica-web/assets/index-VVdtBR4d.css">
   </head>
-  <body>
+  <body style="scroll-behavior: smooth;">
     <div id="root"></div>
+
+    <!-- MENÚ SUPERIOR DE ACCESO RÁPIDO ADICIONAL -->
+    <nav style="max-width: 1000px; margin: 20px auto; padding: 10px 20px; display: flex; justify-content: flex-end; gap: 15px; font-family: sans-serif;">
+        <a href="#root" style="color: #64748b; text-decoration: none; font-weight: bold; padding: 8px 12px;">Tecnología</a>
+        <a href="#academia" style="background-color: #2563eb; color: #ffffff; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: bold; transition: all 0.3s ease;">🔬 Academia</a>
+    </nav>
     
     <!-- SECCIÓN DE ARTÍCULOS TÉCNICOS - CONTENIDO DE VALOR PARA ADSENSE -->
-    <section style="max-width: 1000px; margin: 40px auto; padding: 20px; font-family: sans-serif; color: #1e293b;">
+    <section id="academia" style="max-width: 1000px; margin: 40px auto; padding: 20px; font-family: sans-serif; color: #1e293b; padding-top: 80px;">
         <h2 style="color: #2563eb; border-bottom: 2px solid #e2e8f0; padding-bottom: 10px; text-align: center; font-size: 28px;">🔬 Academia de Ingeniería 4.0 & Automatización</h2>
         <p style="text-align: center; color: #64748b; margin-bottom: 30px;">Artículos técnicos especializados en electrónica avanzada, inteligencia artificial aplicada y redes industriales.</p>
 
@@ -84,7 +90,7 @@
         <!-- Artículo 2 -->
         <article style="background: #ffffff; padding: 25px; border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); margin-bottom: 25px; border: 1px solid #e2e8f0;">
             <h3 style="color: #0f172a; font-size: 20px; margin-top: 0;">2. Configuración de Redes de Fibra Óptica OLT Huawei en Entornos Industriales</h3>
-            <p style="text-align: justify; font-size: 15px; line-height: 1.6;">Llevar conectividad de alta velocidad a entornos rudos como fábricas o talleres mecánicos requiere dejar atrás el cableado de cobre convencional, susceptible al ruido electromagnético. Las arquitecturas FTTH basadas en OLTs de Huawei permiten centralizar la distribution de datos mediante hilos de fibra óptica inmunes a la interferencia. Configurar correctamente los perfiles de tráfico (DBA) y las VLANs en la OLT garantiza que los sistemas de Inteligencia Artificial y los servidores de diagnóstico local cuenten con un ancho de banda simétrico, latencia ultra baja y redundancia de datos ante fallas físicas del cableado exterior.</p>
+            <p style="text-align: justify; font-size: 15px; line-height: 1.6;">Llevar conectividad de alta velocidad a entornos rudos como fábricas o talleres mecánicos requiere dejar atrás el cableado de cobre convencional, susceptible al ruido electromagnético. Las arquitecturas FTTH basadas en OLTs de Huawei permiten centralizar la distribución de datos mediante hilos de fibra óptica inmunes a la interferencia. Configurar correctamente los perfiles de tráfico (DBA) y las VLANs en la OLT garantiza que los sistemas de Inteligencia Artificial y los servidores de diagnóstico local cuenten con un ancho de banda simétrico, latencia ultra baja y redundancia de datos ante fallas físicas del cableado exterior.</p>
         </article>
 
         <!-- Artículo 3 -->
@@ -111,6 +117,9 @@
           transform: translateY(-3px);
           box-shadow: 0px 6px 20px rgba(37, 99, 235, 0.4) !important;
        }
+       a[href="#academia"]:hover {
+          background-color: #1d4ed8 !important;
+       }
     </style>
 
     <!-- Footer Legal para AdSense - Ramón Electrónica -->
@@ -129,5 +138,6 @@
     </footer>
   </body>
 </html>
+
 
 
